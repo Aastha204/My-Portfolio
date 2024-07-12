@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Hello Everyone!">
+    <meta property="og:description" content="This is my portfolio">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.myPortfolio.com/hello-everyone">
+    <meta property="og:image"
+        content="https://i.pinimg.com/474x/38/ea/7d/38ea7d56cfe79b879b3541cead18cbd4.jpg">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+    <!-- AOS CSS from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- AOS JavaScript from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/media.css') }}">
+</head>
+
+<body>
+    <!-- <div class="image-container"> -->
+    <!-- <img src="try12.png" alt="Aastha Portfolio" width="100%" height="auto"> -->
+    <!-- <div class="overlay-text"> -->
+    <header class="header" >
+        <h1 class="logo" >Aastha</h1>
+        <nav class="navbar">
+            <a href="#home" style="--i:1" class="active">Home</a>
+            <a href="#about" style="--i:2">About Me</a>
+            <a href="#services" style="--i:3">My Services</a>
+            <a href="#skill" style="--i:4">My Skills</a>
+            <!-- <a href="#" style="--i:9">Experience</a> -->
+            <a href="#project" style="--i:5">My Projects</a>
+            <a href="#contact" style="--i:6">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+
+
+        <div id="particles-js"></div>
+
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                particlesJS("particles-js", {
+                    particles: {
+                        number: {
+                            value: 80,
+                            density: {
+                                enable: true,
+                                value_area: 800
+                            }
+                        },
+                        color: {
+                            value: "#81c784" /* A lighter green color for particles */
+                        },
+                        shape: {
+                            type: "circle",
+                            stroke: {
+                                width: 0,
+                                color: "#81c784" /* Match the particle color */
+                            },
+                            polygon: {
+                                nb_sides: 5
+                            },
+                            image: {
+                                src: "img/github.svg",
+                                width: 100,
+                                height: 100
+                            }
+                        },
+                        opacity: {
+                            value: 0.5,
+                            random: false,
+                            anim: {
+                                enable: false,
+                                speed: 1,
+                                opacity_min: 0.1,
+                                sync: false
+                            }
+                        },
+                        size: {
+                            value: 3,
+                            random: true,
+                            anim: {
+                                enable: false,
+                                speed: 40,
+                                size_min: 0.1,
+                                sync: false
+                            }
+                        },
+                        line_linked: {
+                            enable: true,
+                            distance: 150,
+                            color: "#81c784",
+                            opacity: 0.4,
+                            width: 1
+                        },
+                        move: {
+                            enable: true,
+                            speed: 6,
+                            direction: "none",
+                            random: false,
+                            straight: false,
+                            out_mode: "out",
+                            bounce: false,
+                            attract: {
+                                enable: false,
+                                rotateX: 600,
+                                rotateY: 1200
+                            }
+                        }
+                    },
+                    interactivity: {
+                        detect_on: "canvas",
+                        events: {
+                            onhover: {
+                                enable: true,
+                                mode: "repulse"
+                            },
+                            onclick: {
+                                enable: true,
+                                mode: "push"
+                            },
+                            resize: true
+                        },
+                        modes: {
+                            grab: {
+                                distance: 400,
+                                line_linked: {
+                                    opacity: 1
+                                }
+                            },
+                            bubble: {
+                                distance: 400,
+                                size: 40,
+                                duration: 2,
+                                opacity: 8,
+                                speed: 3
+                            },
+                            repulse: {
+                                distance: 200
+                            },
+                            push: {
+                                particles_nb: 4
+                            },
+                            remove: {
+                                particles_nb: 2
+                            }
+                        }
+                    },
+                    retina_detect: true
+                });
+            });
+        </script>
+
+        <div class="home-content">
+            <h3>Hello &#x1F44B; It's me</h3>
+            <h1>Aastha Garg</h1>
+            <h3>And I'm a <span class="text"></span></h3>
+
+            <p>🤖 AI enthusiast & aspiring innovator exploring the realms of Artificial Intelligence! 🚀</p>
+
+            <div class="home-sci">`
+                <a href="https://www.instagram.com/data_wiz_pro?igsh=a3V6c2huYmk1bTcx" style="--i:7"><i
+                        class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/aastha-garg-702aa7253/" style="--i:8"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Aastha204" style="--i:8"><i class='bx bxl-github'></i></a>
+            </div>
+            <a href="https://drive.google.com/file/d/1H5DdSdSqbLl7g11KVErz9XXoISWa0_wh/view?usp=sharing"
+                class="btn-box">My Resume</a>
+        </div>
+        </div>
+        <span class="home-imgHover"></span>
+    </section>
+
+
+    <section class="about" id="about">
+        <div class="about-text" syle="color:black;">
+            <div data-aos="fade-right">
+                <h2>About <span>Me</span></h2>
+            </div>
+
+            <div data-aos="fade-up">
+                <h4>University Student!</h4><br>
+
+                <p>
+                    Hello there! 👋 I'm Aastha Garg, a passionate college student navigating the exciting world of
+                    academia and beyond. Currently pursuing [your degree and major] at [your college/university], I
+                    thrive on challenges and embrace the joy of continuous learning.
+                    Beyond the textbooks, I find solace and excitement in the realm of coding. As a coding enthusiast, I
+                    enjoy translating ideas into lines of code and exploring the ever-evolving landscape of technology.
+                    From web development to coding challenges, I'm always up for a coding adventure
+                    Balancing academics and personal growth, I take pride in being a well-rounded individual. Engaging
+                    in extracurricular activities, making new connections, and contributing to the vibrant campus
+                    community are integral parts of my college journey
+                    Looking forward, I aspire to [mention any specific goals or aspirations]. Whether it's making a
+                    positive impact through community projects, pursuing advanced studies, or delving deeper into the
+                    tech industry, I am excited about the possibilities that lie ahead.
+                    Outside the academic sphere, you can find me exploring the latest in tech, sharing insights on my
+                    social media platforms, and connecting with like-minded individuals. Feel free to reach out—I'm
+                    always open to new opportunities, collaborations, and interesting conversations!
+                </p>
+            </div>
+            <br>
+            <a href="https://drive.google.com/file/d/1q8gT-PuMD6zA3EWiU-5yUlfhNF50Ooew/view?usp=sharing"
+                class="btn-box">More about Me</a>
+        </div>
+    </section>
+    <section>
+        <div class="services" id="services">
+            <div class="container">
+
+                <div data-aos="fade-right">
+                    <h1 class="sub-title">My <span>Services</span></h1>
+                </div>
+
+                <div class="services-list">
+                    <div data-aos="fade-left">
+                        <i class=" bx bx-line-chart" style="color:darkcyan"></i>
+                        <h2>Data Visualization</h2>
+                        <p
+                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; align-items: center;">
+                            Our data visualization consultants and experts understand your business needs, KPIs, and
+                            business
+                            drivers to design intuitive and interactive dashboards that allow you to understand your
+                            data in new ways.
+
+                        </p>
+
+                        <a href="#" class="read" onclick="visual()">Learn more</a>
+                    </div>
+                    <div data-aos="fade-up">
+                        <i class='bx bxs-brain' style="color:darkcyan"></i>
+                        <h2>Machine Learning</h2>
+                        <p
+                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;align-items: center;">
+                            Machine learning (ML) enables computers to “learn” through data without explicit
+                            programming. Data scientists
+                            can create deep learning algorithms using techniques borrowed from ML,
+                            helping your company explore ways to improve operations through real-time data.
+                        </p>
+                        <a href="#" class="read" onclick="machine()">Learn more</a>
+                    </div>
+                    <div data-aos="fade-right">
+                        <i class='bx bxs-file' style="color:darkcyan"></i>
+                        <h2>Business Intelligence</h2>
+                        <p
+                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;align-items: center;">
+                            Our pool of Business Intelligence (BI) solutions are geared towards helping your business
+                            develop an
+                            effective strategy that reduces risk and enables growth. Our Business Intelligence service
+                            experts
+                            help you gain a better understanding of the key metrics surrounding your operations and
+                            processes.
+                        </p>
+                        <a href="#" class="read" onclick="business()">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="skills" id="skill">
+            <div class="container_skill">
+
+                <div data-aos="fade-up-right">
+                    <h1 class="sub-title1">My <span1
+                            >Skills</span1></h1>
+                </div>
+                <div class="container1" id="Skills">
+
+                    <div data-aos="flip-left">
+                        <h1 class="heading1" >Technical Skills</h1>
+                    </div>
+                    <div class="Technical-bars" data-aos="flip-left">
+
+
+                        <div class="bar"><i style="color:#c32ec9;background-color: aliceblue;"
+                                class='bx bxl-python'></i>
+                            <div class="info">
+                                PYTHON
+                            </div>
+                            <div class="progress">
+                                <div class="progress-value-python"></div>
+                            </div>
+                        </div>
+                        <div class="bar"><i style="color:rgb(4, 87, 87);background-color: aliceblue;"
+                                class='bx bxl-c-plus-plus'></i>
+                            <div class="info">
+                                C++
+                            </div>
+                            <div class="progress">
+                                <div class="progress-value-cpp"></div>
+                            </div>
+                        </div>
+
+                        <div class="bar"><i style="color:#147bbc;size:56px;background-color: aliceblue;"
+                                class='bx bxl-html5'></i>
+                            <div class="info">
+                                HTML
+                            </div>
+                            <div class="progress">
+                                <div class="progress-value-html"></div>
+                            </div>
+                        </div>
+
+                        <div class="bar"><i style="color:#b0bc1e;background-color: aliceblue;" class='bx bxl-css3'></i>
+                            <div class="info">
+                                CSS
+                            </div>
+                            <div class="progress">
+                                <div class="progress-value-css"></div>
+                            </div>
+                        </div>
+                        <div class="bar"><i style="color:rgb(90, 138, 19);background-color: aliceblue;"
+                                class='bx bxl-javascript'></i>
+                            <div class="info">
+                                JAVASCRIPT
+                            </div>
+                            <div class="progress">
+                                <div class="progress-value-js"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="container1">
+                        <h1 class="heading1" style="color:rgb(1, 29, 29);margin-right: 30px;">Professional Skills</h1>
+                        
+                        <div class="containerskills">
+                            <div class="conic-multicolor-effect" style="--creativity: 94;"></div>
+                          </div>
+                    </div> -->
+                <div class="container1">
+
+                    <div data-aos="fade-up-left">
+                        <h1 class="heading2" >Professional Skills</h1>
+                    </div>
+
+                    <div class="containerskills" data-aos="flip-right">
+                        <div class="conic-multicolor-effect1" style="--creativity: 94;">
+                            <div class="creativity-text">98% Creativity</div>
+                        </div>
+                        <div class="conic-multicolor-effect2" style="--creativity: 94;">
+                            <div class="creativity-text">96% Problem Solving</div>
+                        </div>
+                        <div class="conic-multicolor-effect3" style="--creativity: 94;">
+                            <div class="creativity-text">92% Communication</div>
+                        </div>
+                        <div class="conic-multicolor-effect4" style="--creativity: 94;">
+                            <div class="creativity-text">88% TeamWork</div>
+                        </div>
+                    </div>
+                </div>
+
+
+    </section>
+
+    <section>
+        <div class="myproject" id="portfolio" id="project">
+            <div class="main-text" id="project">
+
+                <div data-aos="fade-up-right">
+                    <h2 class="sub-title2" >Latest <span2
+                            >Projects</span></h2><br><br><br>
+                </div>
+                <div class="portfolio-content" data-aos="fade-up">
+                    <div class="row">
+                        <img src="{{ url_for('static', filename='img/face_project.jpg') }}" height="350px" width="300px">
+                        <div class="layer">
+                            <h5>Face Recognition</h5>
+                            <p>
+                                Developed a robust face recognition system using Python to automate attendance tracking
+                                in real-time.
+                                Utilized OpenCV library for face detection and recognition, capturing user images via
+                                webcam. Integrated the
+                                system with a pre-existing dataset, cross-referencing new images to mark attendance
+                                accurately.
+                            </p>
+                            <div class="projectIcon">
+                                <a href="{{ url_for('static', filename='videos/face_project.mp4') }}"><i class='bx bx-play' style="color:#b0bc1e"></i></a>
+                                <a href="https://github.com/Aastha204/face-recognition-python-project"><i
+                                        class="bx bx-link-external" style="color:#b0bc1e"></i></a>
+                            </div>
+                            <!-- <a href="#"><i class="bx bx-link-external" style="color:#b0bc1e"></i></a> -->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <img src="{{ url_for('static', filename='img/site_project.jpg') }}" height="350px" width="300px" >
+                        <div class="layer">
+                            <h5>Exit the Plugin</h5>
+                            <p>
+                                Created a dynamic and engaging university website comprising four interactive pages:
+                                Home, Login,
+                                Signup, and Scholarship. Leveraged HTML, CSS, and JavaScript to craft a user-centric
+                                platform aimed at
+                                maximizing engagement and functionality.
+                            </p>
+                            <div class="projectIcon">
+                                <a href="{{ url_for('static', filename='videos/site_project.mp4') }}"><i class='bx bx-play' style="color:#b0bc1e"></i></a>
+                                <a href="https://github.com/Aastha204/Exit_the_plugin"><i class="bx bx-link-external"
+                                        style="color:#b0bc1e"></i></a>
+                            </div>
+                            <!-- <a href="#"><i class="bx bx-link-external" style="color:#b0bc1e"></i></a> -->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <img src="{{ url_for('static', filename='img/hotel_project.jpg') }}" height="350px" width="300px">
+                        <div class="layer">
+                            <h5>Hotel Management</h5>
+                            <p>
+                                "Revolutionize your hotel management with our project, providing streamlined
+                                reservations, automated
+                                check-ins, and meticulous inventory control. Elevate guest satisfaction through
+                                personalized services,
+                                instant room updates, and seamless billing integration. Experience operational
+                                excellence with our
+                                user-friendly hotel management solution."
+                            </p>
+                            <div class="projectIcon">
+                                <a href="{{ url_for('static', filename='videos/hotel_project.mp4') }}"><i class='bx bx-play' style="color:#b0bc1e"></i></a>
+                                <a href="https://github.com/Aastha204/Hotel_Management_project"><i
+                                        class="bx bx-link-external" style="color:#b0bc1e"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <br><br><br><br><br><br>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <div data-aos="fade-up-left">
+                <h2 class="subtitle4">Contact <span4 >Me</span3></h2>
+            </div>
+
+            <div data-aos="fade-left">
+                <h4>Let's Work Together</h4>
+            </div>
+            <p>If you're interested in collaboration, partnership, or have any inquiries, feel free to reach out using
+                the contact details provided above. I look forward to discussing potential opportunities and working
+                together.</p>
+            <div class="contact-list">
+                <li ><i
+                        class='bx bxs-send'></i><b>aasthagarg333@gmail.com</b></li>
+                <li ><i class='bx bxs-phone'></i><b>+91
+                        7206169478</b></li>
+            </div>
+            <div class="contact-icons">
+                <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                <a href=""><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/data_wiz_pro?igsh=a3V6c2huYmk1bTcx"><i
+                        class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/aastha-garg-702aa7253/"><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="/" method="POST">
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <input type="email" name="email" placeholder="Enter Your Email" required>
+                <input type="text" name="subject" placeholder="Enter Your Subject">
+                <textarea name="message" cols="40" rows="10" placeholder="Enter your Message" required></textarea>
+                <button type="submit" class="btn-box">Submit</button>
+            </form>
+        </div>
+    </section>
+    <div class="last-text">
+        <p>Developed with love by Aastha @ 2024</p>
+    </div>
+    <a href="#home" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        function redirectToAnotherPage() {
+            window.location.href = "submit.html";
+        }
+        function machine() {
+            window.location.href = "machine.html";
+        }
+        function visual() {
+            window.location.href = "visual.html";
+        }
+        function business() {
+            window.location.href = "business.html";
+        }
+    </script>
+
+
+</body>
+
+</html>

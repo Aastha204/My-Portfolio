@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization Services | Aastha</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #06224d;
+            text-align: center;
+            padding: 0.6em;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #333333;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        h1,
+        h2 {
+            color: #9fc5ff;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li::before {
+            content: "\2022";
+            color: #3260a5;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        canvas {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #06224d;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Data Visualization Services</h1>
+        <p>Aastha - Data Visualization Expert</p>
+    </header>
+
+    <section>
+        <p>Welcome to my Data Visualization Services page! As a provider of cutting-edge data visualization solutions, I utilize the power of technology to transform raw data into insightful and visually compelling representations. Explore the capabilities and advantages of my data visualization services below.</p>
+
+        <h2>Key Features:</h2>
+        <ul>
+            <li>Chart.js Integration: Leverage the versatility of Chart.js, a popular JavaScript charting library, to create dynamic and interactive charts.</li>
+            <li>Customizable Visualizations: Tailored to meet the unique requirements of each client, my visualizations are highly customizable, including bar charts, line graphs, and pie charts.</li>
+            <li>Responsive Design: The page is designed to be responsive, ensuring a seamless viewing experience across various devices and screen sizes.</li>
+        </ul>
+
+        <h2>Example Visualization:</h2>
+        <canvas id="myChart" style="background-color: rgb(253, 251, 251);"></canvas>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            var data = {
+                labels: ['January', 'February', 'March', 'April', 'May'],
+                datasets: [{
+                    label: 'Monthly Data',
+                    backgroundColor: 'rgba(33, 150, 243, 0.5)',
+                    borderColor: 'rgba(33, 150, 243, 1)',
+                    borderWidth: 1,
+                    data: [65, 59, 80, 81, 56]
+                }]
+            };
+
+            var options = {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            };
+
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: data,
+                options: options
+            });
+        </script>
+
+        <h2>Why Choose My Data Visualization Services:</h2>
+        <p>Data-Driven Decision Making: Empower your decision-making process by gaining valuable insights from well-crafted visualizations.</p>
+        <p>Clear Communication: I believe in translating complex data into clear, understandable visuals that effectively communicate your message.</p>
+        <p>Custom Solutions: Every business is unique, and my data visualizations are tailored to meet the specific needs and goals of your organization.</p>
+    </section>
+
+    <footer>
+        &copy; 2024 Aastha | Data Visualization Expert
+    </footer>
+
+</body>
+
+</html>
