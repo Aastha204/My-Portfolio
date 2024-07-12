@@ -27,6 +27,7 @@ This repository contains the source code for my personal portfolio website. It i
 - CSS3
 - JavaScript
 - Python
+- framework: flask
 
 ## Setup
 To view the website locally or contribute to the development:
